@@ -1,4 +1,5 @@
 ﻿body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contenedor-formulario{
@@ -13,12 +14,17 @@
     height: auto;
     border: 1px solid black;
 }
+.navbar-black{
+    background-color: black !important;
+}
 
-.nav-link{
+.nav-link {
     font-size: 20px;
+    color: white ;
 }
 .nav-item{
     padding-left: 40px;
+   
 }
 .btn{
     width:100%;
