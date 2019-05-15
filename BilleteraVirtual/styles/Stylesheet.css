@@ -1,5 +1,6 @@
-﻿body {
-    font-family: 'Montserrat', sans-serif;
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 .contenedor-formulario{
