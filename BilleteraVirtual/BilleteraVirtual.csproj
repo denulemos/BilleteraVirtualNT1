@@ -70,15 +70,15 @@
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="images\Foto.JPG" />
+    <Content Include="Registro.html" />
     <Content Include="MaquetaPrincipal.html" />
     <Content Include="Pages\AdminTarjetas.html" />
     <Content Include="Pages\Deposito.html" />
     <Content Include="Pages\Movimientos.html" />
     <Content Include="Pages\Retiro.html" />
-    <Content Include="Registro.html" />
+    <Content Include="Scripts\mainjs.js" />
     <Content Include="styles\Login.css" />
     <Content Include="styles\Stylesheet.css" />
-    <Content Include="test.css" />
     <Content Include="Ingresar.html" />
     <Content Include="Web.config" />
   </ItemGroup>

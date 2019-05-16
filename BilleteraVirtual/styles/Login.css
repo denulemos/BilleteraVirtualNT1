@@ -11,6 +11,8 @@ body {
     font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0% 50%
@@ -25,6 +27,9 @@ body {
     }
 }
 
+.p {
+    color: black!important;
+}
 @-moz-keyframes Gradient {
     0% {
         background-position: 0% 50%
@@ -73,8 +78,9 @@ h6 {
 
 .form {
     position: relative;
-    z-index: 1;
+    z-index: 99999999999999;
     background: #FFFFFF;
+    width:100%;
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;

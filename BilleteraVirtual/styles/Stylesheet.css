@@ -1,6 +1,27 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+    background:black;   
+}
+
+.contenedor-movimientos{
+    margin-left:19%;
+    width:100%;
+}
+
+#img-foto{
+    width:80%;
+    margin-left:10%;
+}
+
+.contenedor-saldo{
+    width:100%;
+    font-size:100px;
+    text-align:center;
+}
+.texto.saldo {
+    background:black;
 }
 
 .contenedor-formulario{
