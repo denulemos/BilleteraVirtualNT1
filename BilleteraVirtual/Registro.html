@@ -5,27 +5,21 @@
     <title>TEST</title>
     <link rel="stylesheet" href="styles/Login.css" type="text/css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
+    <script src="/Scripts/validaCampos.js"></script>
 </head>
 <body>
 
 
     <div class="login-page">
         <div class="form">
-          
-            <form class="login-form">
+            <form class="login-form" data-toggle="validator" role="form">
                 <h3 style="color:palevioletred">Bienvenido!</h3>
-                <p style="color:black; text-align:left">Nombre</p>
-                <input type="text" placeholder="Nombre" />
-                <p style="color:black; text-align:left">Apellido</p>
-                <input type="text" placeholder="Apellido" />
-                <p style="color:black; text-align:left">Usuario</p>
-                <input type="text" placeholder="Usuario" />
-                <p style="color:black; text-align:left">Mail</p>
-                <input type="text" placeholder="Email valido" />
-                <p style="color:black; text-align:left">Contraseña</p>
-                <input type="password" placeholder="Contraseña" />
+                <p style="color:black; text-align:left"></p>
+                <input type="text" class="form-control" placeholder="Nombre" required/>
+                <input type="text" class="form-control" placeholder="Apellido" required/>
+                <input type="text" class="form-control" placeholder="Usuario" required/>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="el email es inválido" required>
+                <input type="password" class="form-control" placeholder="Contraseña" required/>
                 <div id="captcha">
                 <div class="g-recaptcha" data-sitekey="6LfeyaMUAAAAAEjHyvpu1Bba-yyOTg7hsjt5mr7v"></div>
                 </div>
