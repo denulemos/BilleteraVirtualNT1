@@ -4,25 +4,69 @@
     <meta charset="utf-8" />
     <title>TEST</title>
     <link rel="stylesheet" href="styles/Login.css" type="text/css" />
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
 
+    <!-- Logica de Tarjetas -->
+    <div class="container"style="max-width: none">
+        <div id="myCarousel" class="carousel slide" >
+           
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="login-page">
+                        <div class="form">
 
-    <div class="login-page">
-        <div class="form">
-        
-            <form class="login-form">
-                <h3 style="color:palevioletred">Bienvenido!</h3>
-                <input type="text" placeholder="Usuario" />
-                <input type="password" placeholder="Contraseña" />
-                <button style="background-color:palevioletred"><a href="MaquetaPrincipal.html">Ingresar</a></button>
-                
-                <p class="message">¿No registrado? <a href="Registro.html">Crear Cuenta</a></p>-->
-            </form>
+                            <form class="login-form">
+                                <h3 style="color:palevioletred">Bienvenido!</h3>
+                                <input type="text" class="form-control" placeholder="Usuario"  required/>
+                                <input type="password" class="form-control" placeholder="Contraseña" required />
+                                <button style="background-color:palevioletred"><a href="MaquetaPrincipal.html">Ingresar</a></button>
+
+                                <p class="message">¿No registrado? <a class="right " href="#myCarousel" data-slide="next">Crear Cuenta</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="login-page">
+                        <div class="form">
+
+                            <form class="login-form">
+                                <h3 style="color:palevioletred">Bienvenido!</h3>
+                                <p style="color:black; text-align:left">Nombre</p>
+                                <input type="text" placeholder="Nombre" />
+                                <p style="color:black; text-align:left">Apellido</p>
+                                <input type="text" placeholder="Apellido" />
+                                <p style="color:black; text-align:left">Usuario</p>
+                                <input type="text" placeholder="Usuario" />
+                                <p style="color:black; text-align:left">Mail</p>
+                                <input type="text" placeholder="Email valido" />
+                                <p style="color:black; text-align:left">Contraseña</p>
+                                <input type="password" placeholder="Contraseña" />
+                                <div id="captcha">
+                                    <div class="g-recaptcha" data-sitekey="6LfeyaMUAAAAAEjHyvpu1Bba-yyOTg7hsjt5mr7v"></div>
+                                </div>
+                                <button style="background-color:palevioletred"><a href="MaquetaPrincipal.html">Registrarse</a></button>
+                                <p class="message">¿Ya tienes una cuenta? <a  class="left" href="#myCarousel" data-slide="prev">Ingresar</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+           
         </div>
-    </div>
-   
+            </div>
+        
 </body>
 </html>
+
+<script>
+    $("#myCarousel").carousel("pause");
+</script>

@@ -72,9 +72,12 @@
     <Content Include="card-master\dist\card.css" />
     <Content Include="card-master\dist\card.js" />
     <Content Include="images\Foto.JPG" />
+<<<<<<< HEAD
     <Content Include="Pages\Deposito\MetodoPago.html" />
     <Content Include="Pages\Deposito\Tarjeta.html" />
     <Content Include="Registro.html" />
+=======
+>>>>>>> 835b470ac6e0256064d49c5071f10cefbd21c324
     <Content Include="MaquetaPrincipal.html" />
     <Content Include="Pages\AdminTarjetas.html" />
     <Content Include="Pages\Deposito.html" />
