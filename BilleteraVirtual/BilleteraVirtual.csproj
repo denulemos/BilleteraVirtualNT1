@@ -69,7 +69,11 @@
   <ItemGroup>
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="card-master\dist\card.css" />
+    <Content Include="card-master\dist\card.js" />
     <Content Include="images\Foto.JPG" />
+    <Content Include="Pages\Deposito\MetodoPago.html" />
+    <Content Include="Pages\Deposito\Tarjeta.html" />
     <Content Include="Registro.html" />
     <Content Include="MaquetaPrincipal.html" />
     <Content Include="Pages\AdminTarjetas.html" />
@@ -90,6 +94,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="obj\Release\BilleteraVirtual.csproj.CoreCompileInputs.cache" />
+    <Content Include="card-master\src\scss\card.scss" />
+    <Content Include="card-master\src\scss\cards\_amex.scss" />
+    <Content Include="card-master\src\scss\cards\_card.scss" />
+    <Content Include="card-master\src\scss\cards\_dankort.scss" />
+    <Content Include="card-master\src\scss\cards\_dinersclub.scss" />
+    <Content Include="card-master\src\scss\cards\_discover.scss" />
+    <Content Include="card-master\src\scss\cards\_elo.scss" />
+    <Content Include="card-master\src\scss\cards\_jcb.scss" />
+    <Content Include="card-master\src\scss\cards\_maestro.scss" />
+    <Content Include="card-master\src\scss\cards\_mastercard.scss" />
+    <Content Include="card-master\src\scss\cards\_visa.scss" />
+    <Content Include="card-master\src\scss\cards\_visaelectron.scss" />
+    <Content Include="card-master\src\scss\logos\_amex.scss" />
+    <Content Include="card-master\src\scss\logos\_dankort.scss" />
+    <Content Include="card-master\src\scss\logos\_dinersclub.scss" />
+    <Content Include="card-master\src\scss\logos\_discover.scss" />
+    <Content Include="card-master\src\scss\logos\_elo.scss" />
+    <Content Include="card-master\src\scss\logos\_jcb.scss" />
+    <Content Include="card-master\src\scss\logos\_logo.scss" />
+    <Content Include="card-master\src\scss\logos\_maestro.scss" />
+    <Content Include="card-master\src\scss\logos\_mastercard.scss" />
+    <Content Include="card-master\src\scss\logos\_visa.scss" />
+    <Content Include="card-master\src\scss\logos\_visaelectron.scss" />
+    <Content Include="card-master\src\scss\_mixins.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Principal</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/Stylesheet.css">
+    <script src="../../card-master/dist/card.js"></script>
+    <script src="../../Scripts/mainjs.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body onload="new tarjeta">
+        <div class="navbar-user">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:black!important">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" style="padding-left:421px">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Movimientos.html">Movimientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Deposito.html">Deposito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Retiro.html">Retiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminTarjetas.html">Administrador Tarjetas</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    <div class="contenido-pagina">
+        <div class="sidenav" style="background-color:black">
+            <div class="profilepic">
+                <img src="../../images/Foto.JPG" class="rounded-circle" alt="Flowers in Chania">
+            </div>
+            <div class="infoUser">
+                <h3>¡Hola, NombreUser!</h3>
+            </div>
+        </div>
+
+
+        <div class="contenido-deposito">
+            <!--Main content code to be written here -->
+            <h1>Deposito</h1>
+            <h2>Tarjeta</h2>
+            
+            <div class="demo-container">
+                <div class="card-wrapper"></div>
+                <div class="form-container active">
+                    <!-- Importante el name de los input estan vinculados al javaScritp de la tarjeta, no cambiar(nombre name="name", Numero Tarjeta name="numero", MM/YY name="expiry", CVV name="cvc")-->
+                    <form class="contenedor-tarjeta" action="">
+                        <div class="grupo-tarjeta">
+                            <div class="input-nombre grupo-input">
+                                <p style="color:black; text-align:left">Nombre Completo</p>
+                                <input type="text" placeholder="Nombre" name="name" required />
+                            </div>
+                            <div class="input-numeroTarjeta grupo-input">
+                                <p style="color:black; text-align:left">Numero Tarjeta</p>
+                                <input type="text" placeholder="Numero Tarjeta" name="number" required />
+                            </div>
+                        </div>
+                        <div class="grupo-tarjeta">
+                            <div class="input-mes grupo-input">
+                                <p style="color:black; text-align:left">MM/YY</p>
+                                <input type="text" placeholder="MM/YY" name="expiry" required />
+                            </div>
+                            <div class="input-cvv grupo-input">
+                                <p style="color:black; text-align:left">CVV</p>
+                                <input type="text" placeholder="CVV" name="cvc" required />
+                            </div>             
+                         </div>   
+                        <button href="MaquetaPrincipal.html" type="submit"><a>Continuar</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

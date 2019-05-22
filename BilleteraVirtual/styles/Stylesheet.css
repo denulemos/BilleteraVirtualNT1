@@ -36,6 +36,7 @@ body {
     height: auto;
     border: 1px solid black;
 }
+
 .navbar-black{
     background-color: black !important;
 }
@@ -67,14 +68,11 @@ body {
 }
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 280px; /* Set the width of the sidebar */
+    width: 20%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
 }
 
     /* The navigation menu links */
@@ -106,4 +104,178 @@ body {
         .sidenav a {
             font-size: 18px;
         }
+}
+
+.contenido-deposito, .contenido-metodoPago{
+    margin:auto;
+    float:right;
+    width:80%;
+}
+
+.profilepic {
+    padding-top: 98%;
+    width: 80%;
+    margin: auto;
+}
+
+.infoUser {
+    padding-left: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+}
+
+.rounded-circle{
+    width:100%;
+}
+
+.deposito-form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.deposito-form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.a{
+    text-decoration:none;
+}
+
+.input-fecha{
+    width:10% !important;
+}
+
+.img-tarjeta {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.contenedor-tarjeta {
+    width: 100%;
+    height: 20%;
+    display: block;
+    position: relative;
+}
+
+.num-tar {
+    display: block;
+    position: absolute;
+    top:0%;
+}
+
+.form-container {
+    margin-left:3%;
+    margin-top:1%;
+    width:60%;
+
+}
+
+.demo-container{
+    display:flex;
+    margin-left:3%;
+    margin-top:-2%;
+}
+
+.form-container input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-container button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form-container p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.grupo-tarjeta{
+    display:flex;
+    margin-right:50px;
+    width:100%;
+}
+
+.input-cvv, .input-numeroTarjeta{
+    margin-left:5%;
+}
+
+.grupo-input{
+    width:50%;
+}
+
+.card-wrapper{
+    margin-top:2.5%;
+}
+
+.contenido-deposito h1, .contenido-metodoPago h1{
+    margin-left:5%;
+    margin-top:3%;
+    margin-bottom:8%;
+}
+
+.contenido-deposito h2 {
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.contenedor-metodos{
+    display:flex;
+}
+
+.grupo-metodoPago{
+    border: 1px solid black;
+    padding:2%;
+    margin:auto;
+    width:100%;
+    text-align:center;
+}
+
+.contenedor {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.grupo-metodoPago input[type=radio]:checked + p {
+    color: red;
 }

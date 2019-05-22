@@ -1,5 +1,7 @@
-﻿/*
-  var d = new Date();
-    var n = d.getUTCDate();
-    document.getElementById("fechatest").innerHTML = n;
-*/
+﻿
+function tarjeta() {
+    new Card({
+        form: document.querySelector('form'),
+        container: '.card-wrapper'
+    });
+}
