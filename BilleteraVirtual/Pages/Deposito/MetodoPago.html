@@ -27,7 +27,7 @@
                         <a class="nav-link" href="Movimientos.html">Movimientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Deposito.html">Deposito</a>
+                        <a class="nav-link activo" href="Deposito.html">Deposito</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Retiro.html">Retiro</a>
@@ -53,24 +53,17 @@
 
         <div class="contenido-metodoPago">
             <!--Main content code to be written here -->
-            <h1>Deposito</h1>
-            <h2>Metodo de Pago</h2>
 
             <div class="contenedor-metodos">
                 <!-- Importante el name de los input estan vinculados al javaScritp de la tarjeta, no cambiar(nombre name="name", Numero Tarjeta name="numero", MM/YY name="expiry", CVV name="cvc")-->
                 <div class="contenedor" id="contenedor-tarjeta">
-                    <label for="input-tarjeta" class="grupo-metodoPago">
-                        <input class="a" id="input-tarjeta" type="radio" name="a" value="one_value" />
-                        <img src="#" />
-                        <p>Tarjeta</p>
-                    </label>
+						<h3>Tarjeta</h3>
+                        <button class="boton-metodo-pago" ><img src="Z:\BilleteraVirtualNT1\BilleteraVirtual\images\tarjeta.png" /></button>
+                        
                 </div>
                 <div class="contenedor" id="contenedor-transferencia">
-                    <label for="input-transferencia" class="grupo-metodoPago"">
-                        <input class="a" id="input-transferencia" type="radio" name="a" value="another" />
-                        <img src="#" />
-                        <p>Transferencia</p>
-                    </label>
+						<h3>Transferencia</h3>
+                        <button class="boton-metodo-pago"><img src="Z:\BilleteraVirtualNT1\BilleteraVirtual\images\tarjeta.png" /></button>
                 </div>
 
             </div>

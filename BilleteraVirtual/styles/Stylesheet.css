@@ -66,12 +66,64 @@ body {
     margin-top:12%;
     border-radius: 10px;
 }
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.p {
+    color: black!important;
+}
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 .sidenav {
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+	
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 20%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -260,6 +312,7 @@ body {
 
 .contenedor-metodos{
     display:flex;
+	margin-top:12%;
 }
 
 .grupo-metodoPago{
@@ -274,8 +327,51 @@ body {
     width: 35%;
     margin: auto;
     text-align: center;
+    border: 1px solid black;
+    padding: 6%;
+    border-radius: 7%;
+	
+	
+}
+
+
+.contenedor-monto {
+	display:flex;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 6%;
+	
+	
 }
 
 .grupo-metodoPago input[type=radio]:checked + p {
     color: red;
+}
+
+.boton-metodo-pago{
+    padding:0%;
+    border: 1px solid black;
+    border-radius:5%;
+}
+
+.boton-metodo-pago img{
+    width:100%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.activo{
+    color: red !important;
+}
+
+.contenedor-monto h2{
+	margin-right:10%;
+}
+
+.contenedor-monto input{
+	width:90%;
 }
