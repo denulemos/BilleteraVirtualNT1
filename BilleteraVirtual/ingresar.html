@@ -38,16 +38,11 @@
 
                             <form class="login-form">
                                 <h3 style="color:palevioletred">Bienvenido!</h3>
-                                <p style="color:black; text-align:left">Nombre</p>
-                                <input type="text" placeholder="Nombre" />
-                                <p style="color:black; text-align:left">Apellido</p>
-                                <input type="text" placeholder="Apellido" />
-                                <p style="color:black; text-align:left">Usuario</p>
-                                <input type="text" placeholder="Usuario" />
-                                <p style="color:black; text-align:left">Mail</p>
-                                <input type="text" placeholder="Email valido" />
-                                <p style="color:black; text-align:left">Contraseña</p>
-                                <input type="password" placeholder="Contraseña" />
+                                <input type="text" class="form-control" placeholder="Nombre" required />
+                                <input type="text" class="form-control" placeholder="Apellido" required />
+                                <input type="text" class="form-control" placeholder="Usuario" required />
+                                <input type="email" class="form-control" placeholder="Email valido" required />
+                                <input type="password" class="form-control" placeholder="Contraseña" required />
                                 <div id="captcha">
                                     <div class="g-recaptcha" data-sitekey="6LfeyaMUAAAAAEjHyvpu1Bba-yyOTg7hsjt5mr7v"></div>
                                 </div>
