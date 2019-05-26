@@ -37,6 +37,10 @@ body {
     border: 1px solid black;
 }
 
+.navbar{
+    margin-bottom:0 !important;
+}
+
 .navbar-black{
     background-color: black !important;
 }
@@ -158,11 +162,13 @@ body {
         }
 }
 
-.contenido-deposito, .contenido-metodoPago{
-    margin:auto;
-    float:right;
-    width:80%;
+.contenido-deposito, .contenido-metodoPago {
+    margin: auto;
+    float: right;
+    width: 80%;
 }
+
+
 
 .profilepic {
     padding-top: 98%;
@@ -222,11 +228,15 @@ body {
     position: relative;
 }
 
-.contenedor-tarjeta {
+.form-pagotarjeta {
     width: 100%;
-    height: 20%;
+    margin-top:4%;
     display: block;
     position: relative;
+}
+
+.contenedor-tarjeta{
+    display:flex;
 }
 
 .num-tar {
@@ -237,18 +247,17 @@ body {
 
 .form-container {
     margin-left:3%;
-    margin-top:1%;
+    margin-top:4%;
     width:60%;
 
 }
 
 .demo-container{
-    display:flex;
     margin-left:3%;
     margin-top:-2%;
 }
 
-.form-container input {
+.form-container input, .demo-container input {
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -260,12 +269,12 @@ body {
     font-size: 14px;
 }
 
-.form-container button {
+.demo-container button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
     background: #4CAF50;
-    width: 100%;
+    width: 96%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
@@ -275,7 +284,7 @@ body {
     cursor: pointer;
 }
 
-.form-container p {
+.form-container p, .demo-container p {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 12px;
@@ -311,8 +320,7 @@ body {
 }
 
 .contenedor-metodos{
-    display:flex;
-	margin-top:12%;
+	margin-top:6%;
 }
 
 .grupo-metodoPago{
@@ -330,20 +338,26 @@ body {
     border: 1px solid black;
     padding: 6%;
     border-radius: 7%;
-	
-	
+	margin-top:5%;	
 }
 
 
 .contenedor-monto {
-	display:flex;
-    width: 80%;
+    display: flex;
+    width: 86%;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
-    padding: 6%;
-	
-	
+    border-radius: 15px;
+    padding: 2%;
+
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 .grupo-metodoPago input[type=radio]:checked + p {
@@ -353,11 +367,17 @@ body {
 .boton-metodo-pago{
     padding:0%;
     border: 1px solid black;
-    border-radius:5%;
+    border-radius:6%;
+}
+.boton-metodo-pago:hover {
+    padding: 0%;
+    border: 3px solid green;
+    border-radius: 6%;
 }
 
 .boton-metodo-pago img{
     width:100%;
+    border-radius:6%;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -372,6 +392,29 @@ body {
 	margin-right:10%;
 }
 
-.contenedor-monto input{
-	width:90%;
+.contenedor-monto input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.seleccion-pago{
+    display:flex;
+    margin-bottom:3%;
+}
+
+.demo-container p{
+    color:black;
+    text-align:left;
+}
+
+.input-monto{
+    width:96%;
+    margin-top:3%;
 }

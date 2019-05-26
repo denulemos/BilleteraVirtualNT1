@@ -4,13 +4,22 @@
     <meta charset="utf-8" />
     <title>Principal</title>
     <link rel="stylesheet" type="text/css" href="../styles/Stylesheet.css">
-    
+    <script src="../card-master/dist/card.js"></script>
+    <script src="../Scripts/mainjs.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
 </head>
-<body>
+
+<body onload="new tarjeta">
 
     <div class="navbar-user">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:black!important">
@@ -37,8 +46,7 @@
             </div>
         </nav>
     </div>
-	
-	<div class="contenido-pagina">
+
         <div class="sidenav" style="background-color:black">
             <div class="profilepic">
                 <img src="../images/Foto.JPG" class="rounded-circle" alt="Flowers in Chania">
@@ -51,17 +59,71 @@
 
         <div class="contenido-metodoPago">
             <!--Main content code to be written here -->
-
-            <div class="contenedor-metodos">
-                <div class="contenedor-monto">
-					<h2>Monto:</h2>
-					<input type="text" />
-				</div>
-
-            </div>
+            
+                        <div class="contenedor-metodos">
+                            <div id="myCarousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="seleccion-pago">
+                                            <div class="contenedor" id="contenedor-tarjeta">
+                                                <h3>Tarjeta</h3>
+                                                <button class="boton-metodo-pago"><a class="right " href="#myCarousel" data-slide="next"><img src="../images/tarjeta.png" /></a></button>
+                                            </div>
+                                            <div class="contenedor" id="contenedor-transferencia">
+                                                <h3>Transferencia</h3>
+                                                <button class="boton-metodo-pago"><img src="../images/transferencia.png" /></button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <form class="form-pagotarjeta" action="">
+                                            <div class="demo-container">
+                                                <div class="contenedor-tarjeta">
+                                                    <div class="card-wrapper"></div>
+                                                        <div class="form-container active">
+                                                            <!-- Importante el name de los input estan vinculados al javaScritp de la tarjeta, no cambiar(nombre name="name", Numero Tarjeta name="numero", MM/YY name="expiry", CVV name="cvc")-->
+                                                            <div class="grupo-tarjeta">
+                                                                <div class="input-nombre grupo-input">
+                                                                    <p>Nombre Completo</p>
+                                                                    <input type="text" placeholder="Nombre" name="name" required />
+                                                                </div>
+                                                                <div class="input-numeroTarjeta grupo-input">
+                                                                    <p>Numero Tarjeta</p>
+                                                                    <input type="text" placeholder="Numero Tarjeta" name="number" required />
+                                                                </div>
+                                                            </div>
+                                                            <div class="grupo-tarjeta">
+                                                                <div class="input-mes grupo-input">
+                                                                    <p>MM/YY</p>
+                                                                    <input type="text" placeholder="MM/YY" name="expiry" required />
+                                                                </div>
+                                                                <div class="input-cvv grupo-input">
+                                                                    <p>CVV</p>
+                                                                    <input type="text" placeholder="CVV" name="cvc" required />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="input-monto grupo-input">
+                                                    <p>Monto</p>
+                                                    <input type="text" placeholder="Monto" required />
+                                                </div>
+                                                <button type="submit">Continuar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>                         
+                        </div>
         </div>
-    </div>
-	
-	
+                  
+                
+
+
 </body>
 </html>
+
+<script>
+    $("#myCarousel").carousel("pause");
+</script>
