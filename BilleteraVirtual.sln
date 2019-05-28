@@ -1,8 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asd", "asd", "{A81A6366-5C9B-4439-AAD9-EA27EA075537}"
+	ProjectSection(SolutionItems) = preProject
+		BilleteraVirtual\BilleteraVirtual.csproj = BilleteraVirtual\BilleteraVirtual.csproj
+		BilleteraVirtual\BilleteraVirtual.csproj.user = BilleteraVirtual\BilleteraVirtual.csproj.user
+		BilleteraVirtual\ingresar.html = BilleteraVirtual\ingresar.html
+		BilleteraVirtual\MaquetaPrincipal.html = BilleteraVirtual\MaquetaPrincipal.html
+		BilleteraVirtual\packages.config = BilleteraVirtual\packages.config
+		BilleteraVirtual\Web.config = BilleteraVirtual\Web.config
+		BilleteraVirtual\Web.Debug.config = BilleteraVirtual\Web.Debug.config
+		BilleteraVirtual\Web.Release.config = BilleteraVirtual\Web.Release.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
