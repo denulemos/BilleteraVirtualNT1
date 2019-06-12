@@ -1,74 +1,80 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 body {
     font-family: 'Roboto', sans-serif!important;
-    overflow-x:hidden!important;
-    background:black;  
-    overflow: hidden; 
+    overflow-x: hidden!important;
+    background: #212529 !important;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
 }
 
-.contenedor-movimientos{
-    margin-left:19%;
-    width:100%;
+.contenedor-movimientos {
+    margin-left: 19%;
+    width: 100%;
 }
 
-#img-foto{
-    width:80%;
-    margin-left:10%;
+#img-foto {
+    width: 80%;
+    margin-left: 10%;
 }
 
-.contenedor-saldo{
-    width:100%;
-    font-size:100px;
-    text-align:center;
+.contenedor-saldo {
+    width: 100%;
+    font-size: 100px;
+    text-align: center;
 }
+
 .texto.saldo {
-    background:black;
+    background: black;
 }
 
-.contenedor-formulario{
-    width:500px;
-    height:250px;
+.contenedor-formulario {
+    width: 500px;
+    height: 250px;
     border: 1px solid black;
 }
 
 .contenedor-registro {
-    margin-top:100px;
+    margin-top: 100px;
     width: 500px;
     height: auto;
     border: 1px solid black;
 }
 
-.navbar{
-    margin-bottom:0 !important;
+.navbar {
+    margin-bottom: 0 !important;
 }
 
-.navbar-black{
+.navbar-black {
     background-color: black !important;
 }
 
 .nav-link {
     font-size: 20px;
-    color: white ;
-}
-.nav-item{
-    padding-left: 40px;
-   
-}
-.btn{
-    width:100%;
+    font-weight: bold;
+    color: white;
 }
 
-#botones{
-    display:flex;
+.nav-item {
+    padding-left: 40px;
+}
+
+.btn {
+    width: 100%;
+}
+
+#botones {
+    display: flex;
 }
 
 .formulario-inicio {
-    padding-top:55px;
+    padding-top: 55px;
 }
 
-
-.contenedor-formulario{
-    margin-top:12%;
+.contenedor-formulario {
+    margin-top: 12%;
     border-radius: 10px;
 }
 
@@ -76,11 +82,9 @@ body {
     0% {
         background-position: 0% 50%
     }
-
     50% {
         background-position: 100% 50%
     }
-
     100% {
         background-position: 0% 50%
     }
@@ -89,15 +93,14 @@ body {
 .p {
     color: black!important;
 }
+
 @-moz-keyframes Gradient {
     0% {
         background-position: 0% 50%
     }
-
     50% {
         background-position: 100% 50%
     }
-
     100% {
         background-position: 0% 50%
     }
@@ -107,11 +110,9 @@ body {
     0% {
         background-position: 0% 50%
     }
-
     50% {
         background-position: 100% 50%
     }
-
     100% {
         background-position: 0% 50%
     }
@@ -124,43 +125,51 @@ body {
     -webkit-animation: Gradient 15s ease infinite!important;
     -moz-animation: Gradient 15s ease infinite!important;
     animation: Gradient 15s ease infinite!important;
-	
-    height: 100%!important; /* Full-height: remove this if you want "auto" height */
-    width: 20%!important; /* Set the width of the sidebar */
-    position: fixed!important; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1!important; /* Stay on top */
-    overflow-x: hidden!important; /* Disable horizontal scroll */
+    height: 100%!important;
+    /* Full-height: remove this if you want "auto" height */
+    width: 20%!important;
+    /* Set the width of the sidebar */
+    position: fixed!important;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1!important;
+    /* Stay on top */
+    overflow-x: hidden!important;
+    /* Disable horizontal scroll */
 }
 
-    /* The navigation menu links */
-    .sidenav a {
-        padding: 6px 8px 6px 16px!important;
-        text-decoration: none!important;
-        font-size: 25px!important;
-        color: #818181!important;
-        display: block!important;
-    }
+/* The navigation menu links */
 
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1!important;
-        }
+.sidenav a {
+    padding: 6px 8px 6px 16px!important;
+    text-decoration: none!important;
+    font-size: 25px!important;
+    color: #818181!important;
+    display: block!important;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1!important;
+}
 
 /* Style page content */
+
 .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
-
-        .sidenav a {
-            font-size: 18px;
-        }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 .contenido-deposito, .contenido-metodoPago {
@@ -168,41 +177,49 @@ body {
     float: right;
     width: 80%;
 }
-.modal-confirm {		
+
+.modal-confirm {
     color: #636363;
     width: 325px;
 }
+
 .modal-confirm .modal-content {
     padding: 20px;
     border-radius: 5px;
     border: none;
 }
+
 .modal-confirm .modal-header {
-    border-bottom: none;   
+    border-bottom: none;
     position: relative;
 }
+
 .modal-confirm h4 {
     text-align: center;
     font-size: 26px;
     margin: 30px 0 -15px;
 }
+
 .modal-confirm .form-control, .modal-confirm .btn {
     min-height: 40px;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
+
 .modal-confirm .close {
     position: absolute;
     top: -5px;
     right: -5px;
-}	
+}
+
 .modal-confirm .modal-footer {
     border: none;
     text-align: center;
     border-radius: 5px;
     font-size: 13px;
-}	
+}
+
 .modal-confirm .icon-box {
-    color: #fff;		
+    color: #fff;
     position: absolute;
     margin: 0 auto;
     left: 0;
@@ -217,14 +234,17 @@ body {
     text-align: center;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
+
 .modal-confirm .icon-box i {
     font-size: 58px;
     position: relative;
     top: 3px;
 }
+
 .modal-confirm.modal-dialog {
     margin-top: 80px;
 }
+
 .modal-confirm .btn {
     color: #fff;
     border-radius: 4px;
@@ -234,11 +254,11 @@ body {
     line-height: normal;
     border: none;
 }
+
 .modal-confirm .btn:hover, .modal-confirm .btn:focus {
     background: #6fb32b;
     outline: none;
 }
-
 
 .profilepic {
     padding-top: 98%!important;
@@ -249,11 +269,12 @@ body {
 .infoUser {
     padding-left: 10px;
     color: white!important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
-.rounded-circle{
-    width:100%!important;
+.rounded-circle {
+    width: 100%!important;
 }
 
 .deposito-form input {
@@ -284,12 +305,13 @@ body {
     transition: all 0.3 ease;
     cursor: pointer;
 }
-.a{
-    text-decoration:none;
+
+.a {
+    text-decoration: none;
 }
 
-.input-fecha{
-    width:10% !important;
+.input-fecha {
+    width: 10% !important;
 }
 
 .img-tarjeta {
@@ -300,36 +322,36 @@ body {
 
 .form-pagotarjeta {
     width: 100%;
-    margin-top:4%;
+    margin-top: 4%;
     display: block;
     position: relative;
 }
 
-.contenedor-tarjeta{
-    display:flex;
+.contenedor-tarjeta {
+    display: flex;
 }
 
 .num-tar {
     display: block;
     position: absolute;
-    top:0%;
+    top: 0%;
 }
 
 .form-container {
-    margin-left:3%;
-    margin-top:4%;
-    width:60%;
-
+    margin-left: 3%;
+    margin-top: 4%;
+    width: 60%;
 }
 
-.demo-container{
-    margin-left:3%;
-    margin-top:-2%;
+.demo-container {
+    margin-left: 3%;
+    margin-top: -2%;
 }
 
 .form-container input, .demo-container input {
     font-family: "Roboto", sans-serif;
     outline: 0;
+    color: black;
     background: #f2f2f2;
     width: 100%;
     border: 0;
@@ -341,17 +363,25 @@ body {
 
 .demo-container button {
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     outline: 0;
-    background: #4CAF50;
+    background: linear-gradient(-45deg, #2e8531, #4CAF50, #c92028, #aa1d24);
+    background-size: 400% 400%!important;
+    -webkit-animation: Gradient 5s ease-in-out infinite!important;
+    -moz-animation: Gradient 5s ease-in-out infinite!important;
+    animation: Gradient 5s ease-in-out infinite!important;
     width: 96%;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
     cursor: pointer;
+}
+
+.form-container input:required:focus:invalid {
+    border: 1px solid red;
+    /* otras propiedades */
 }
 
 .form-container p, .demo-container p {
@@ -360,75 +390,70 @@ body {
     font-size: 12px;
 }
 
-.grupo-tarjeta{
-    display:flex;
-    margin-right:50px;
-    width:100%;
+.grupo-tarjeta {
+    display: flex;
+    margin-right: 50px;
+    width: 100%;
 }
 
-.input-cvv, .input-numeroTarjeta{
-    margin-left:5%;
+.input-cvv, .input-numeroTarjeta {
+    margin-left: 5%;
 }
 
-.grupo-input{
-    width:50%;
+.grupo-input {
+    width: 50%;
 }
 
-.card-wrapper{
-    margin-top:2.5%;
+.card-wrapper {
+    margin-top: 2.5%;
 }
 
-.contenido-deposito h1, .contenido-metodoPago h1{
-    margin-left:5%;
-    margin-top:3%;
-    margin-bottom:8%;
+.contenido-deposito h1, .contenido-metodoPago h1 {
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 8%;
 }
 
 .contenido-deposito h2 {
     margin-left: 15%;
     margin-top: 3%;
 }
-.tabla::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+
+.contenedor-metodos {
+    margin-top: 6%;
 }
 
-.tabla::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-.tabla::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
-}
-.contenedor-metodos{
-	margin-top:6%;
-}
-
-.grupo-metodoPago{
+.grupo-metodoPago {
     border: 1px solid black;
-    padding:2%;
-    margin:auto;
-    width:100%;
-    text-align:center;
+    padding: 2%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .contenedor {
+    color: #fff!important;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%!important;
+    -webkit-animation: Gradient 15s ease infinite!important;
+    -moz-animation: Gradient 15s ease infinite!important;
+    animation: Gradient 15s ease infinite!important;
     width: 35%;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid white;
     padding: 6%;
     border-radius: 7%;
-	margin-top:5%;	
+    margin-top: 5%;
 }
 
+.contenedor button {
+    background: none;
+}
+
+.contenedor h3 {
+    font-family: monospace;
+}
 
 .contenedor-monto {
     display: flex;
@@ -437,7 +462,6 @@ body {
     text-align: center;
     border-radius: 15px;
     padding: 2%;
-
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -448,36 +472,49 @@ body {
     font-size: 14px;
 }
 
-.grupo-metodoPago input[type=radio]:checked + p {
-    color: red;
+.boton-metodo-pago {
+    padding: 0%;
+    width: 215px;
+    height: 137px;
+    border: 2px solid black;
+    border-radius: 6%;
+    transition: 2s ease-in-out;
 }
 
-.boton-metodo-pago{
-    padding:0%;
-    border: 1px solid black;
-    border-radius:6%;
-}
 .boton-metodo-pago:hover {
+    background: white;
     padding: 0%;
-    border: 3px solid green;
+    border: 2px solid white;
     border-radius: 6%;
 }
 
-.boton-metodo-pago img{
-    width:100%;
-    border-radius:6%;
+.boton-metodo-pago img {
+    visibility: visible;
+    opacity: 100%;
+    transition: visibility 0.9s, opacity 5s;
+}
+
+.boton-metodo-pago:hover img {
+    visibility: visible;
+    opacity: 0.05;
+    transition: visibility 0.9s, opacity 0.5s linear;
+}
+
+.boton-metodo-pago img {
+    width: 100%;
+    border-radius: 6%;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white !important;
 }
 
-.navbar-dark .navbar-nav .nav-link.activo{
-    color: red !important;
+.navbar-dark .navbar-nav .nav-link.activo {
+    color: #23D5AB !important;
 }
 
-.contenedor-monto h2{
-	margin-right:10%;
+.contenedor-monto h2 {
+    margin-right: 10%;
 }
 
 .contenedor-monto input {
@@ -492,43 +529,260 @@ body {
     font-size: 14px;
 }
 
-.seleccion-pago{
-    display:flex;
-    margin-bottom:3%;
+.seleccion-pago {
+    display: flex;
+    margin-bottom: 3%;
 }
 
-.demo-container p{
-    color:black;
-    text-align:left;
+.demo-container p {
+    color: white;
+    text-align: left;
 }
 
-.input-monto{
-    width:96%;
-    margin-top:3%;
+.input-monto {
+    width: 96%;
+    margin-top: 3%;
 }
 
 .tabla::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
+    background-color: #343a40;
+}
+
+.tabla::-webkit-scrollbar {
+    width: 12px;
     background-color: #343a40;
 }
 
 .tabla::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
-.main-content{
+.main-content {
     background: #343a40;
 }
 
-.main-content p{
+.main-content p {
     color: white;
 }
 
-.tabla::-webkit-scrollbar{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+.modal-content {
+    color: #fff!important;
+    background: #212529 !important;
+}
+
+.modal-footer .btn {
+    color: #fff!important;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;
+    background-size: 400% 400%!important;
+    -webkit-animation: Gradient 5s ease infinite!important;
+    -moz-animation: Gradient 5s ease infinite!important;
+    animation: Gradient 5s ease infinite!important;
+}
+
+.modal-confirm .icon-box {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%!important;
+    -webkit-animation: Gradient 15s ease infinite!important;
+    -moz-animation: Gradient 15s ease infinite!important;
+    animation: Gradient 15s ease infinite!important;
+}
+
+.tabla {
+    overflow-y: auto;
+    height: 445px;
+    scroll-behavior: smooth;
+    width: 1092px
+}
+
+.tabla thead th {
+    position: sticky;
+    top: 0;
+}
+
+.tabla-encabezado th {
+    background: #343a40;
+    height: 20px;
+}
+
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: white !important;
+    border-bottom: 1px solid;
+    border-top: none;
+}
+
+table {
+    border-spacing: 0px;
+    border-color: white;
+    border-collapse: separate !important;
+}
+
+.table thead>tr>th {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.table tbody>tr>th, .table tbody>tr>td {
+    border-bottom: 1px solid white;
+    border-top: none;
+}
+
+.contenido {
+    margin-left: 20%;
+    width: 80%;
+    display: flex;
+
+    overflow-y: auto;
+    height: 605px;
+    scroll-behavior: smooth;
+}
+
+
+
+.info-tarjeta p{
+    color:white;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.info-tarjeta {
+    width: 60%;
+    display: flex;
+    height: 150px;
+    background: black;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.info-tarjeta button{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-style: none;
+    width: 11%;
+    background: #DF0101;
+    color: white;
+    font-size: 36px;
+}
+
+.info{
+    width: 70%;
+    margin-left: 10%;
+    height: 47%;
+    margin-top: 15%;
+}
+
+.contenido th {
+    width: 1%;
+    height: 150px;
+    margin: auto;
+    margin-left: 9%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+
+
+.contenido table{
+    width: 100%;
+}
+
+
+.contenido::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #343a40;
+}
+
+.contenido::-webkit-scrollbar {
+    width: 12px;
+    background-color: #343a40;
+}
+
+.contenido::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.contenido table{
+    border-spacing: 50px;
+    margin: auto;
+    width: 81%;
+}
+
+
+
+.btn-nuevatarjeta {
+    color: white;
+    width: 80%;
+    height: 150px;
+    background: #4caf50;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-appearance: caret;
+    transition: 1s ease-in-out;
+}
+
+.btn-nuevatarjeta a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.btn-nuevatarjeta:hover {
+    background: #2383d5;
+}
+
+
+.agregar p{
+    font-size: 75px;
+    margin-top: -11px;
+}
+
+
+.agregar{
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: 2s ease-in-out;
+}
+
+.btn-eliminartarjeta{
+    color: white;
+    width: 80%;
+    height: 150px;
+    background: #2383d5;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-appearance: caret;
+    transition: 1s ease-in-out;
+}
+
+.btn-eliminartarjeta:hover{
+    background: #DF0101;
+}
+
+.eliminar{
+    display: none;
+    font-size: 60px;
+}
+
+.form-creartarjeta{
+    width: 100%;
+    margin-top: 10%;
+    display: block;
+    position: relative; 
+    margin-left: 20%;
+
+}
+
+.grupo-inputtarjeta{
+    margin-left: 3%;
+    margin-top: 4%;
+    width: 48%;
+}
+
+.form-creartarjeta button{
+    width: 77.5%;
+    margin-top: 3%;
 }
