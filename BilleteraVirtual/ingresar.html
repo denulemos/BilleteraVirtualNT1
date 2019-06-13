@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="Scripts/mainjs.js"></script>
 
 
 </head>
@@ -23,8 +24,8 @@
 
                             <form class="login-form">
                                 <h3 style="color:palevioletred">Bienvenido!</h3>
-                                <input type="text" class="form-control" placeholder="Usuario"  required/>
-                                <input type="password" class="form-control" placeholder="Contraseña" required />
+                                <input type="text" class="form-control" placeholder="Usuario" onblur="validarCampoVacio(this)" required/>
+                                <input type="password" class="form-control" placeholder="Contraseña" onblur="validarCampoVacio(this)" required />
                                 <button style="background-color:palevioletred"><a href="MaquetaPrincipal.html">Ingresar</a></button>
 
                                 <p class="message">¿No registrado? <a class="right " href="#myCarousel" data-slide="next">Crear Cuenta</a></p>
@@ -39,15 +40,15 @@
                             <form class="login-form">
                                 <h3 style="color:palevioletred">Bienvenido!</h3>
                                 <p style="color:black; text-align:left">Nombre</p>
-                                <input type="text" placeholder="Nombre" />
+                                <input type="text" placeholder="Nombre" onblur="validarCampoVacio(this)"/>
                                 <p style="color:black; text-align:left">Apellido</p>
-                                <input type="text" placeholder="Apellido" />
+                                <input type="text" placeholder="Apellido"  onblur="validarCampoVacio(this)"/>
                                 <p style="color:black; text-align:left">Usuario</p>
-                                <input type="text" placeholder="Usuario" />
+                                <input type="text" placeholder="Usuario" onblur="validarCampoVacio(this)"/>
                                 <p style="color:black; text-align:left">Mail</p>
-                                <input type="text" placeholder="Email valido" />
+                                <input type="text" placeholder="Email valido" onblur="validarCampoVacio(this)"/>
                                 <p style="color:black; text-align:left">Contraseña</p>
-                                <input type="password" placeholder="Contraseña" />
+                                <input type="password" placeholder="Contraseña" onblur="validarCampoVacio(this)"/>
                                 <div id="captcha">
                                     <div class="g-recaptcha" data-sitekey="6LfeyaMUAAAAAEjHyvpu1Bba-yyOTg7hsjt5mr7v"></div>
                                 </div>
